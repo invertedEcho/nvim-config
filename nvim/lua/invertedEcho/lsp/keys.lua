@@ -1,0 +1,6 @@
+SetKey('n', 'gR', vim.lsp.buf.references)
+SetKey('n', '<leader>rn', vim.lsp.buf.rename)
+SetKey('n', 'ga', vim.lsp.buf.code_action)
+SetKey('n', 'ge', vim.diagnostic.open_float)
+SetKey('n', '<leader>oo', '<cmd>TSToolsRemoveUnusedImport<cr>')
+SetKey('n', '<leader>am', '<cmd>TSToolsAddMissingImports<cr>')
