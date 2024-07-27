@@ -130,9 +130,14 @@ require('lazy').setup({
   {
     'folke/trouble.nvim',
     event = 'BufEnter',
-    config = function()
-      require('invertedEcho.trouble')
-    end,
+    opts = {},
+    cmd = 'Trouble',
+    keys = {
+      {
+        '<leader>to',
+        '<cmd>Trouble diagnostics toggle<cr>',
+      },
+    },
   },
   {
     'windwp/nvim-ts-autotag',
@@ -175,11 +180,57 @@ require('lazy').setup({
   },
   {
     'akinsho/flutter-tools.nvim',
-    lazy = false,
     dependencies = {
       'nvim-lua/plenary.nvim',
     },
-    config = true,
+    config = function()
+      require('invertedEcho.flutter')
+    end,
+  },
+  -- TODO: Clean me up
+  { 'nvim-neotest/nvim-nio' },
+  {
+    'mfussenegger/nvim-dap',
+    config = function()
+      require('invertedEcho.dap')
+    end,
+    dependencies = {
+      {
+        'rcarriga/nvim-dap-ui',
+        keys = {
+          {
+            '<leader>du',
+            function()
+              require('dapui').toggle({})
+            end,
+            desc = 'Dap UI',
+          },
+          {
+            '<leader>de',
+            function()
+              require('dapui').eval()
+            end,
+            desc = 'Eval',
+            mode = { 'n', 'v' },
+          },
+        },
+        opts = {},
+        config = function(_, opts)
+          local dap = require('dap')
+          local dapui = require('dapui')
+          dapui.setup(opts)
+          dap.listeners.after.event_initialized['dapui_config'] = function()
+            dapui.open({})
+          end
+          dap.listeners.before.event_terminated['dapui_config'] = function()
+            dapui.close({})
+          end
+          dap.listeners.before.event_exited['dapui_config'] = function()
+            dapui.close({})
+          end
+        end,
+      },
+    },
   },
 }, {
   ui = {
