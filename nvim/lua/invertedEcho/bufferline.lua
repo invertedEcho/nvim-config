@@ -1,4 +1,6 @@
 local bufferline = require('bufferline')
+local utils = require('invertedEcho.utils')
+
 bufferline.setup({
   options = {
     style_preset = {
@@ -17,9 +19,9 @@ bufferline.setup({
   },
 })
 
-SetKey('n', '<tab>', '<cmd>BufferLineCycleNext<cr>')
-SetKey('n', '<s-tab>', '<cmd>BufferLineCyclePrev<cr>')
-SetKey('n', '<leader>bp', '<cmd>BufferLineTogglePin<cr>')
-SetKey('n', '<leader>bb', '<cmd>BufferLinePick<cr>')
-SetKey('n', '<leader>bc', '<cmd>BufferLinePickClose<cr>')
-SetKey('n', '<leader>bo', '<cmd>BufferLineCloseOthers<cr>')
+utils.setKey('n', '<tab>', '<cmd>BufferLineCycleNext<cr>')
+utils.setKey('n', '<s-tab>', '<cmd>BufferLineCyclePrev<cr>')
+utils.setKey('n', '<leader>bp', '<cmd>BufferLineTogglePin<cr>')
+utils.setKey('n', '<leader>bb', '<cmd>BufferLinePick<cr>')
+utils.setKey('n', '<leader>bc', '<cmd>BufferLinePickClose<cr>')
+utils.setKey('n', '<leader>bo', '<cmd>BufferLineCloseOthers<cr>')

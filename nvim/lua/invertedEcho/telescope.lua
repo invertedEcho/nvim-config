@@ -1,4 +1,6 @@
+local utils = require('invertedEcho.utils')
 local telescope = require('telescope')
+
 telescope.setup({
   pickers = {
     colorscheme = {
@@ -16,13 +18,13 @@ telescope.setup({
     },
   },
 })
-SetKey('n', '<leader>tf', '<cmd>Telescope find_files<cr>')
-SetKey('n', '<leader>tt', '<cmd>Telescope live_grep<cr>')
-SetKey('n', '<leader>ty', '<cmd>Telescope resume<cr>')
-SetKey('n', '<leader>tc', '<cmd>Telescope colorscheme<cr>')
-SetKey(
+utils.setKey('n', '<leader>tf', '<cmd>Telescope find_files<cr>')
+utils.setKey('n', '<leader>tt', '<cmd>Telescope live_grep<cr>')
+utils.setKey('n', '<leader>ty', '<cmd>Telescope resume<cr>')
+utils.setKey('n', '<leader>tc', '<cmd>Telescope colorscheme<cr>')
+utils.setKey(
   'n',
   '<leader>th',
   '<cmd>Telescope find_files hidden=true no_ignore=true<cr>'
 )
-SetKey('n', '<leader>tb', '<cmd>Telescope buffers<cr>')
+utils.setKey('n', '<leader>tb', '<cmd>Telescope buffers<cr>')
