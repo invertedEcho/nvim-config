@@ -2,7 +2,7 @@ local utils = require('invertedEcho.utils')
 
 require('nvim-tree').setup({
   view = {
-    side = 'left',
+    side = 'right',
     adaptive_size = true,
     number = true,
     relativenumber = true,
