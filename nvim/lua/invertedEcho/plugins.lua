@@ -114,12 +114,6 @@ require('lazy').setup({
     end,
   },
   {
-    'rcarriga/nvim-notify',
-    config = function()
-      require('invertedEcho.notify')
-    end,
-  },
-  {
     'numToStr/Comment.nvim',
     config = function()
       require('invertedEcho.comment')
