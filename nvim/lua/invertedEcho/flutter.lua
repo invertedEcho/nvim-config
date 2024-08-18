@@ -7,7 +7,4 @@ require('flutter-tools').setup({
   },
 })
 
-utils.setKey('n', '<leader>fc', '<cmd>FlutterRun<cr>')
-utils.setKey('n', '<leader>fr', '<cmd>FlutterRestart<cr>')
-utils.setKey('n', '<leader>fe', '<cmd>FlutterEmulators<cr>')
-utils.setKey('n', '<leader>fq', '<cmd>FlutterQuit<cr>')
+utils.setKey('n', '<leader>fc', '<cmd>Telescope flutter commands<cr>')
