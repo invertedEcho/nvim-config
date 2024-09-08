@@ -38,6 +38,9 @@ require('lazy').setup({
     },
   },
   {
+    'b0o/schemastore.nvim'
+  },
+  {
     'm4xshen/autoclose.nvim',
     config = true,
   },
