@@ -11,22 +11,22 @@ require('mason-lspconfig').setup({
     'tailwindcss',
     'pyright',
     'bashls',
-    -- TODO: lua-language-server from system, mason installed one wont work because nixos dynamically linked libraries
-    'lua_ls',
+    -- see TODO in ./servers/luals.lua
+    -- 'lua_ls',
     'phpactor',
     'jsonls',
-    'vtsls',
+    'cssls',
   },
   handlers = {
     lsp_zero.default_setup,
   },
 })
 
-require('lspconfig').jsonls.setup {
+require('lspconfig').jsonls.setup({
   settings = {
     json = {
       schemas = require('schemastore').json.schemas(),
       validate = { enable = true },
     },
   },
-}
+})

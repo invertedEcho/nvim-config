@@ -38,7 +38,7 @@ require('lazy').setup({
     },
   },
   {
-    'b0o/schemastore.nvim'
+    'b0o/schemastore.nvim',
   },
   {
     'm4xshen/autoclose.nvim',
@@ -183,6 +183,11 @@ require('lazy').setup({
     config = function()
       require('invertedEcho.flutter')
     end,
+  },
+  {
+    'pmizio/typescript-tools.nvim',
+    opts = {},
+    ft = { 'typescript', 'typescript-react' },
   },
   -- TODO: Clean me up
   { 'nvim-neotest/nvim-nio' },
