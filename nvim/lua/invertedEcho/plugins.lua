@@ -159,16 +159,16 @@ require('lazy').setup({
     end,
     ft = { 'markdown' },
   },
-  {
-    'rmagatti/auto-session',
-    config = function()
-      require('auto-session').setup({
-        auto_session_enabled = true,
-        auto_save_enabled = true,
-        auto_restore_enabled = true,
-      })
-    end,
-  },
+  -- {
+  --   'rmagatti/auto-session',
+  --   config = function()
+  --     require('auto-session').setup({
+  --       auto_session_enabled = true,
+  --       auto_save_enabled = true,
+  --       auto_restore_enabled = true,
+  --     })
+  --   end,
+  -- },
   {
     'mfussenegger/nvim-lint',
     config = function()
@@ -187,7 +187,7 @@ require('lazy').setup({
   {
     'pmizio/typescript-tools.nvim',
     opts = {},
-    ft = { 'typescript', 'typescript-react' },
+    ft = { 'typescript', 'typescriptreact' },
   },
   -- TODO: Clean me up
   { 'nvim-neotest/nvim-nio' },
@@ -233,6 +233,15 @@ require('lazy').setup({
         end,
       },
     },
+  },
+  {
+    'stevearc/oil.nvim',
+    ---@module 'oil'
+    ---@type oil.SetupOpts
+    opts = {},
+    -- Optional dependencies
+    dependencies = { { 'echasnovski/mini.icons', opts = {} } },
+    -- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if prefer nvim-web-devicons
   },
 }, {
   ui = {
