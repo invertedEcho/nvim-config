@@ -11,5 +11,6 @@ require('conform').setup({
     dart = { 'dart_format' },
     -- to be used with the prettier php plugin -> requires setup in your php project
     php = { 'prettierd' },
+    nix = { 'alejandra' },
   },
 })
