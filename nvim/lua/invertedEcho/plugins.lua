@@ -241,6 +241,12 @@ require('lazy').setup({
     opts = { view_options = { show_hidden = true } },
     dependencies = { 'nvim-tree/nvim-web-devicons' },
   },
+  {
+    'dmmulroy/tsc.nvim',
+    config = function()
+      require('tsc').setup()
+    end,
+  },
 }, {
   ui = {
     border = 'rounded',
