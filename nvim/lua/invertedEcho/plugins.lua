@@ -1,12 +1,12 @@
 require('lazy').setup({
-  {
-    'akinsho/bufferline.nvim',
-    version = '*',
-    dependencies = 'nvim-tree/nvim-web-devicons',
-    config = function()
-      require('invertedEcho.bufferline')
-    end,
-  },
+  -- {
+  --   'akinsho/bufferline.nvim',
+  --   version = '*',
+  --   dependencies = 'nvim-tree/nvim-web-devicons',
+  --   config = function()
+  --     require('invertedEcho.bufferline')
+  --   end,
+  -- },
   {
     'nvim-telescope/telescope.nvim',
     dependencies = 'nvim-lua/plenary.nvim',
@@ -245,6 +245,14 @@ require('lazy').setup({
     'dmmulroy/tsc.nvim',
     config = function()
       require('tsc').setup()
+    end,
+  },
+  {
+    'ThePrimeagen/harpoon',
+    branch = 'harpoon2',
+    dependencies = { 'nvim-lua/plenary.nvim' },
+    config = function()
+      require('invertedEcho.harpoon')
     end,
   },
 }, {
