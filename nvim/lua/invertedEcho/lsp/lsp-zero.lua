@@ -16,6 +16,7 @@ require('mason-lspconfig').setup({
     'phpactor',
     'jsonls',
     'cssls',
+    'rust_analyzer'
   },
   handlers = {
     lsp_zero.default_setup,
