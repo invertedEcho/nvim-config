@@ -10,15 +10,15 @@ utils.setKey('i', '<c-j>', '<down>')
 utils.setKey('i', '<c-k>', '<up>')
 utils.setKey('i', '<c-l>', '<right>')
 
--- switch windows
+-- switch buffers
 utils.setKey('n', '<c-h>', '<c-w>h')
 utils.setKey('n', '<c-j>', '<c-w>j')
 utils.setKey('n', '<c-k>', '<c-w>k')
 utils.setKey('n', '<c-l>', '<c-w>l')
 
--- resize windows
-utils.setKey('n', '<C-S-k>', '<c-w>5-')
-utils.setKey('n', '<C-S-j>', '<c-w>5+')
+-- resize buffers
+utils.setKey('n', '<C-S-k>', '<c-w>2-')
+utils.setKey('n', '<C-S-j>', '<c-w>2+')
 utils.setKey('n', '<C-S-h>', '<c-w>5<')
 utils.setKey('n', '<C-S-l>', '<c-w>5>')
 
