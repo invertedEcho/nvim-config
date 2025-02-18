@@ -187,7 +187,7 @@ require('lazy').setup({
   {
     'pmizio/typescript-tools.nvim',
     opts = {},
-    ft = { 'typescript', 'typescriptreact' },
+    ft = { 'typescript', 'typescriptreact', 'javascriptreact' },
   },
   -- TODO: Clean me up
   { 'nvim-neotest/nvim-nio' },
