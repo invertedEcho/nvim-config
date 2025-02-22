@@ -83,10 +83,28 @@ require('lazy').setup({
   },
   {
     'folke/tokyonight.nvim',
-    lazy = false,
+    -- lazy = false,
+    -- priority = 1000,
+    -- config = function()
+    --   vim.cmd('colorscheme tokyonight-storm')
+    -- end,
+  },
+  {
+    'ellisonleao/gruvbox.nvim',
     priority = 1000,
     config = function()
-      vim.cmd('colorscheme tokyonight-storm')
+      require('gruvbox').setup({
+        -- this is to get rid of the weird grey border left of the numbers
+        transparent_mode = true,
+        italic = {
+          strings = false,
+          emphasis = false,
+          comments = false,
+          operators = false,
+          folds = false,
+        },
+      })
+      vim.cmd('colorscheme gruvbox')
     end,
   },
   {
