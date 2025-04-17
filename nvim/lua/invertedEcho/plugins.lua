@@ -1,12 +1,4 @@
 require('lazy').setup({
-  -- {
-  --   'akinsho/bufferline.nvim',
-  --   version = '*',
-  --   dependencies = 'nvim-tree/nvim-web-devicons',
-  --   config = function()
-  --     require('invertedEcho.bufferline')
-  --   end,
-  -- },
   {
     'nvim-telescope/telescope.nvim',
     dependencies = 'nvim-lua/plenary.nvim',
@@ -94,8 +86,6 @@ require('lazy').setup({
     priority = 1000,
     config = function()
       require('gruvbox').setup({
-        -- this is to get rid of the weird grey border left of the numbers
-        transparent_mode = true,
         italic = {
           strings = false,
           emphasis = false,
