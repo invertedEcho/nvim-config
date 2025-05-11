@@ -10,6 +10,16 @@ require('nvim-tree').setup({
   git = {
     ignore = false,
   },
+  renderer = {
+    icons = {
+      glyphs = {
+        git = {
+          unstaged = '',
+          untracked = '',
+        },
+      },
+    },
+  },
 })
 
 utils.setKey('n', '<c-n>', '<cmd>NvimTreeFindFileToggle<CR>')
