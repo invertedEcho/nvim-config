@@ -1,11 +1,17 @@
-# nvim-config
+# Nixvim template
 
-## Setup
+This template gives you a good starting point for configuring nixvim standalone.
 
-This config will only work with newer versions of nvim, something like >=0.9
+## Configuring
 
-- Symlink this config into ~/.config/
+To start configuring, just add or modify the nix files in `./config`.
+If you add a new configuration file, remember to add it to the
+[`config/default.nix`](./config/default.nix) file
 
-    ```bash
-    ln -s $(pwd)/nvim ~/.config/
-    ```
+## Testing your new configuration
+
+To test your configuration simply run the following command
+
+```
+nix run .
+```
