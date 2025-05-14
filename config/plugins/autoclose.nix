@@ -1,0 +1,1 @@
+{plugins.autoclose.enable = true;}
