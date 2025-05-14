@@ -265,6 +265,14 @@ require('lazy').setup({
   },
   {
     'SmiteshP/nvim-navic',
+    config = function()
+      local navic = require('nvim-navic')
+      navic.setup({
+        lsp = {
+          auto_attach = true,
+        },
+      })
+    end,
   },
 }, {
   ui = {
