@@ -263,6 +263,9 @@ require('lazy').setup({
       require('invertedEcho.harpoon')
     end,
   },
+  {
+    'SmiteshP/nvim-navic',
+  },
 }, {
   ui = {
     border = 'rounded',
