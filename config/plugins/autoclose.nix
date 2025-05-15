@@ -1,1 +1,3 @@
-{plugins.autoclose.enable = true;}
+{
+  plugins.autoclose.enable = true;
+}

@@ -2,16 +2,23 @@
   imports = [
     ./color.nix
     ./options.nix
-    ./lsp.nix
     ./keys.nix
     ./plugins/autoclose.nix
     ./plugins/cmp.nix
     ./plugins/comment.nix
+    ./plugins/conform.nix
+    ./plugins/dressing.nix
     ./plugins/fidget.nix
+    ./plugins/gitsigns.nix
     ./plugins/icons.nix
+    ./plugins/markdown-preview.nix
     ./plugins/oil.nix
+    ./plugins/lsp.nix
+    ./plugins/lualine.nix
     ./plugins/telescope.nix
     ./plugins/treesitter.nix
+    ./plugins/trouble.nix
+    ./plugins/toggleterm.nix
     ./plugins/typescript-tools.nix
   ];
 }
