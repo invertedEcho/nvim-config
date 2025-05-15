@@ -1,4 +1,7 @@
 {
+  diagnostic.settings = {
+    virtual_text = true;
+  };
   plugins.lsp = {
     enable = true;
     servers = {
