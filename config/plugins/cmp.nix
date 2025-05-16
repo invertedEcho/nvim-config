@@ -12,6 +12,8 @@
       mapping = {
         "<C-j>" = "cmp.mapping.select_next_item()";
         "<C-k>" = "cmp.mapping.select_prev_item()";
+        "<C-space>" = "cmp.mapping.complete()";
+        "<C-i>" = "cmp.mapping.confirm({ select = true })";
       };
       completion.completeopt = "menu,menuone,preview,noselect";
     };
