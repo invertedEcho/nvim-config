@@ -50,7 +50,7 @@
     }
     {
       action = "<C-w>2+";
-      key = "<C-j>";
+      key = "<C-S-j>";
       mode = "n";
     }
     {
