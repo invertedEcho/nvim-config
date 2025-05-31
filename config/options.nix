@@ -7,9 +7,6 @@
     scrolloff = 5;
 
     shiftwidth = 2;
-
-    # Hide command line unless needed
-    cmdheight = 0;
   };
   globals.mapleader = " ";
 
