@@ -12,6 +12,7 @@
     ./plugins/gitsigns.nix
     ./plugins/icons.nix
     ./plugins/markdown-preview.nix
+    ./plugins/todo-comments.nix
     ./plugins/oil.nix
     ./plugins/lsp.nix
     ./plugins/lualine.nix

@@ -3,8 +3,7 @@
     enable = true;
     keymaps = {
       "<leader>tf" = "find_files";
-      "<leader>tt" = 
-"live_grep";
-      };
+      "<leader>tt" = "live_grep";
     };
+  };
 }
