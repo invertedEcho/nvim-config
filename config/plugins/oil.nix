@@ -9,6 +9,8 @@
       view_options = {
         show_hidden = true;
       };
+      # See :help oil.skip_confirm_for_simple_edits so see what qualifies as simple edits
+      skip_confirm_for_simple_edits = true;
     };
   };
   keymaps = [
