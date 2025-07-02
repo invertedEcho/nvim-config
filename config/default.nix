@@ -3,7 +3,7 @@
     ./color.nix
     ./options.nix
     ./keys.nix
-    ./plugins/autoclose.nix
+    ./plugins/nvim-autopairs.nix
     ./plugins/cmp.nix
     ./plugins/comment.nix
     ./plugins/conform.nix
