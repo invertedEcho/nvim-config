@@ -21,5 +21,6 @@
     ./plugins/trouble.nix
     ./plugins/toggleterm.nix
     ./plugins/typescript-tools.nix
+    ./plugins/zen-mode.nix
   ];
 }
