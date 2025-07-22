@@ -63,5 +63,10 @@
       key = "<C-S-l>";
       mode = "n";
     }
+    {
+      action = ":noh<cr>";
+      key = "<esc>";
+      mode = "n";
+    }
   ];
 }
