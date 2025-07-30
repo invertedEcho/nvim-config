@@ -12,6 +12,7 @@
       };
       lua_ls.enable = true;
       nixd.enable = true;
+      csharp_ls.enable = true;
     };
     keymaps = {
       silent = true;
