@@ -43,24 +43,25 @@
       mode = "n";
     }
     # Make resizing buffers easier
+    # note, M = alt. see :help key-notation
     {
       action = "<C-w>2-";
-      key = "<C-S-k";
+      key = "<M-k>";
       mode = "n";
     }
     {
       action = "<C-w>2+";
-      key = "<C-S-j>";
+      key = "<M-j>";
       mode = "n";
     }
     {
       action = "<C-w>5<";
-      key = "<C-S-h>";
+      key = "<M-h>";
       mode = "n";
     }
     {
       action = "<C-W>5>";
-      key = "<C-S-l>";
+      key = "<M-l>";
       mode = "n";
     }
     {
