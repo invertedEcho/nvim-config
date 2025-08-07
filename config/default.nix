@@ -1,5 +1,6 @@
 {
   imports = [
+    ./plugins/hardtime.nix
     ./color.nix
     ./options.nix
     ./keys.nix
