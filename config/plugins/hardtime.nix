@@ -1,5 +1,0 @@
-{
-  plugins.hardtime = {
-    enable = true;
-  };
-}

@@ -1,3 +1,0 @@
-{
-  plugins.dressing.enable = true;
-}

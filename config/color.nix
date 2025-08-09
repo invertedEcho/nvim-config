@@ -1,3 +1,0 @@
-{
-  colorschemes.gruvbox.enable = true;
-}
