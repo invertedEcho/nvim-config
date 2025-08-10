@@ -1,3 +1,10 @@
+vim.diagnostic.config({
+	virtual_text = {
+		prefix = "●",
+	},
+	underline = true,
+})
+
 vim.lsp.config("luals", {
 	cmd = { "lua-language-server" },
 	filetypes = { "lua" },
