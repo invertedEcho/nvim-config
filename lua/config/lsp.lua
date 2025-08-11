@@ -1,3 +1,9 @@
+vim.keymap.set("n", "gd", vim.lsp.buf.definition)
+vim.keymap.set("n", "gR", vim.lsp.buf.references)
+vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename)
+vim.keymap.set("n", "ga", vim.lsp.buf.code_action)
+vim.keymap.set("n", "ge", vim.diagnostic.open_float)
+
 vim.diagnostic.config({
 	virtual_text = {
 		prefix = "●",
@@ -10,13 +16,8 @@ vim.lsp.config("luals", {
 	filetypes = { "lua" },
 	root_markers = { ".luarc.json", ".luarc.jsonc" },
 })
-
 vim.lsp.enable("luals")
 
 vim.lsp.enable("rust_analyzer")
 
-vim.keymap.set("n", "gd", vim.lsp.buf.definition)
-vim.keymap.set("n", "gR", vim.lsp.buf.references)
-vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename)
-vim.keymap.set("n", "ga", vim.lsp.buf.code_action)
-vim.keymap.set("n", "ge", vim.diagnostic.open_float)
+vim.lsp.enable("nixd")
