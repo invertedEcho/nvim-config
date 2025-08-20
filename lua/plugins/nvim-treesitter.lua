@@ -19,7 +19,7 @@ return {
 				"dart",
 				"yaml",
 				"python",
-				"nix",
+				"c_sharp",
 			},
 			highlight = {
 				enable = true,
