@@ -13,12 +13,6 @@ vim.keymap.set("i", "<c-l>", "<right>")
 vim.keymap.set("i", "<c-k>", "<up>")
 vim.keymap.set("i", "<c-j>", "<down>")
 
--- Navigation between buffers without having to prefix with <C-w>
-vim.keymap.set("n", "<c-h>", "<c-w>h")
-vim.keymap.set("n", "<c-j>", "<c-w>j")
-vim.keymap.set("n", "<c-k>", "<c-w>k")
-vim.keymap.set("n", "<c-l>", "<c-w>l")
-
 -- easier resize of buffers
 -- note, M = alt. see :help key-notation
 vim.keymap.set("n", "<M-k>", "<C-w>2-")
