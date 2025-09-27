@@ -1,13 +1,11 @@
-return
-{
+return {
 	"nvim-lualine/lualine.nvim",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
 		require("lualine").setup({
 			options = {
-				-- TODO: why no work?
-				section_seperators = "",
-				component_seperators = "",
+				section_separators = { left = "", right = "" },
+				component_separators = { left = "", right = "" },
 				theme = "gruvbox",
 			},
 			sections = {
@@ -16,8 +14,8 @@ return
 				lualine_c = { { "filename", path = 1 } },
 				lualine_x = { "filetype" },
 				lualine_y = { "progress" },
-				lualine_z = { "location" }
-			}
+				lualine_z = { "location" },
+			},
 		})
 	end,
 }
