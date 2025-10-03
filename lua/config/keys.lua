@@ -22,3 +22,7 @@ vim.keymap.set("n", "<M-l>", "<C-w>5>")
 
 -- clear search with escape
 vim.keymap.set("n", "<esc>", "<cmd>noh<cr>")
+
+-- delete buffer
+vim.keymap.set("n", "<leader>x", "<cmd>bd<cr>")
+vim.keymap.set("n", "<leader>ax", "<cmd>%bd|e#<cr>")
