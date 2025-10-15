@@ -20,6 +20,8 @@ return {
 				"yaml",
 				"python",
 				"c_sharp",
+				"cpp",
+				"glsl",
 			},
 			highlight = {
 				enable = true,
