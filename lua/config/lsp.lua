@@ -18,7 +18,8 @@ vim.lsp.config("luals", {
 })
 vim.lsp.enable("luals")
 
-vim.lsp.enable("rust_analyzer")
+-- NOTE: already enabled by rustaceanvim plugin
+-- vim.lsp.enable("rust_analyzer")
 
 vim.lsp.enable("pyright")
 
