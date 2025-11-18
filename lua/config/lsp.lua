@@ -5,6 +5,14 @@ vim.keymap.set("n", "ga", vim.lsp.buf.code_action)
 vim.keymap.set("n", "ge", vim.diagnostic.open_float)
 
 vim.diagnostic.config({
+	signs = {
+		text = {
+			[vim.diagnostic.severity.ERROR] = "",
+			[vim.diagnostic.severity.WARN] = "",
+			[vim.diagnostic.severity.INFO] = "",
+			[vim.diagnostic.severity.HINT] = "",
+		},
+	},
 	virtual_text = {
 		prefix = "●",
 	},

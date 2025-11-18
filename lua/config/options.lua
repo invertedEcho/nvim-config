@@ -4,3 +4,5 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.undofile = true
 vim.opt.shiftwidth = 2
 vim.opt.smarttab = true
+
+vim.opt.signcolumn = "yes"
