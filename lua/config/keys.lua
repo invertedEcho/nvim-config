@@ -1,10 +1,13 @@
 -- Plugin keymaps
 -- TODO: should eventually move them all into their plugin spec into the keys field
 vim.keymap.set("n", "<leader>o", "<cmd>Oil<cr>")
+
 vim.keymap.set("n", "<leader>tf", "<cmd>Telescope find_files<cr>")
 vim.keymap.set("n", "<leader>tt", "<cmd>Telescope live_grep<cr>")
 vim.keymap.set("n", "<leader>tc", "<cmd>Telescope resume<cr>")
 vim.keymap.set("n", "<leader>th", "<cmd>Telescope find_files hidden=true<cr>")
+vim.keymap.set("n", "<leader>tb", "<cmd>Telescope buffers<cr>")
+
 vim.keymap.set("n", "<leader>tq", "<cmd>TodoQuickFix<cr>")
 
 -- Move cursor in insert mode
