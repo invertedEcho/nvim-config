@@ -31,7 +31,7 @@ vim.lsp.enable("luals")
 
 vim.lsp.enable("pyright")
 
-vim.lsp.enable("csharp_ls")
+vim.lsp.enable("roslyn")
 
 vim.lsp.enable("cmake")
 vim.lsp.enable("clangd")
