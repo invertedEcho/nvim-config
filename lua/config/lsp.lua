@@ -36,3 +36,5 @@ vim.lsp.enable("roslyn")
 vim.lsp.enable("cmake")
 vim.lsp.enable("clangd")
 vim.lsp.enable("glsl_analyzer")
+
+vim.lsp.enable("tombi")
