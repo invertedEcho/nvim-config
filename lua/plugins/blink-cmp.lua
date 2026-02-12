@@ -19,6 +19,10 @@ return {
 			["<C-j>"] = { "select_next" },
 			["<C-k>"] = { "select_prev" },
 			["<CR>"] = { "select_and_accept", "fallback" },
+			["<C-n>"] = {
+				"show_signature",
+				"hide_signature",
+			},
 		},
 
 		appearance = {
