@@ -12,4 +12,11 @@ return {
 	},
 	dependencies = { { "echasnovski/mini.icons", opts = {} } },
 	lazy = false,
+	keys = {
+		{
+			"<leader>f",
+			"<CMD>Oil<CR>",
+			desc = "Open oil",
+		},
+	},
 }
