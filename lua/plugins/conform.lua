@@ -11,8 +11,9 @@ return {
 				-- to be used with the prettier php plugin -> requires setup in the project
 				php = { "prettierd" },
 				nix = { "alejandra" },
+				rust = { "rustfmt" },
 			},
-			format_on_save = { timeout_ms = 500, lsp_format = "fallback" },
+			format_on_save = { timeout_ms = 100, lsp_format = "fallback" },
 		})
 	end,
 }
