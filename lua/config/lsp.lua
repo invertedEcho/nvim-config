@@ -39,3 +39,5 @@ vim.lsp.enable("glsl_analyzer")
 
 vim.lsp.enable("tombi")
 vim.lsp.enable("jsonls")
+
+vim.lsp.enable("nixd")
