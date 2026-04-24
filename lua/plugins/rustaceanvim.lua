@@ -1,5 +1,5 @@
 return {
 	"mrcjkb/rustaceanvim",
-	version = "^6", -- Recommended
+	version = "^9",
 	lazy = false, -- This plugin is already lazy
 }

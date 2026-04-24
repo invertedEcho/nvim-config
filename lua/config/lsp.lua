@@ -41,3 +41,8 @@ vim.lsp.enable("tombi")
 vim.lsp.enable("jsonls")
 
 vim.lsp.enable("nixd")
+
+vim.lsp.enable("java_language_server")
+vim.lsp.config("java_language_server", {
+	cmd = { "java-language-server" },
+})

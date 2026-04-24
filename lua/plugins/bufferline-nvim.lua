@@ -48,5 +48,13 @@ return {
 			"<cmd>BufferLineCloseOthers<cr>",
 			desc = "Close all other buffers except current one",
 		},
+		{
+			"<leader>bl",
+			"<cmd>BufferLineMoveNext",
+		},
+		{
+			"<leader>bh",
+			"<cmd>BufferLineMovePrev",
+		},
 	},
 }

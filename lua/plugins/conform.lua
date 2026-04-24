@@ -12,6 +12,7 @@ return {
 				php = { "prettierd" },
 				nix = { "alejandra" },
 				rust = { "rustfmt" },
+				java = { "google-java-format" },
 			},
 			format_on_save = { timeout_ms = 100, lsp_format = "fallback" },
 		})
