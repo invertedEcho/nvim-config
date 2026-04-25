@@ -6,3 +6,5 @@ vim.opt.shiftwidth = 2
 vim.opt.smarttab = true
 
 vim.opt.signcolumn = "yes"
+
+vim.o.termguicolors = true
