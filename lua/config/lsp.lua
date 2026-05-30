@@ -46,3 +46,5 @@ vim.lsp.enable("java_language_server")
 vim.lsp.config("java_language_server", {
     cmd = { "java-language-server" },
 })
+
+vim.lsp.enable("gopls")

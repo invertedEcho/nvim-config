@@ -2,10 +2,9 @@ return {
     "stevearc/overseer.nvim",
     keys = {
         { "<leader>or", "<cmd>OverseerRun<cr>" },
-        { "<leader>oo", "<cmd>OverseerOpen<cr>" },
-        { "<leader>oc", "<cmd>OverseerClose<cr>" },
+        { "<leader>oo", "<cmd>OverseerToggle<cr>" },
     },
-    config = function()
+    init = function()
         vim.api.nvim_create_user_command("OverseerRestartLast", function()
             local overseer = require("overseer")
             local task_list = require("overseer.task_list")
