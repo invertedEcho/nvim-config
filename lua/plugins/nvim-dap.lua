@@ -2,25 +2,12 @@ return {
     "mfussenegger/nvim-dap",
     config = function()
         local dap = require("dap")
-        dap.adapters.codellb = {
-            type = "server",
-            port = "${port}",
-            executable = {
-                command = "/home/invertedecho/lldb/adapter/codelldb",
-                args = { "--port", "${port}" },
-            },
+        dap.adapters.codelldb = {
+            type = "executable",
+            -- the absolute path is bad, but cant do much here, codelldb is just a binary inside a vscode extension.
+            -- too lazy to package this for nix.
+            command = "/home/echo/dev/codelldb-extension/adapter/codelldb",
         }
-        dap.configurations.rust = {
-            {
-                name = "Launch file",
-                type = "codellb",
-                request = "launch",
-                program = function()
-                    return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
-                end,
-                cwd = "${workspaceFolder}",
-                stopOnEntry = false,
-            },
-        }
+        -- hi, future me. for rust, debug configurations come from rustaceanvim plugin. just :RustLsp debuggables
     end,
 }

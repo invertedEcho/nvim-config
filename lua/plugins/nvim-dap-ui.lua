@@ -5,6 +5,12 @@ return {
         require("dapui").setup()
     end,
     keys = {
+        {
+            "<leader>do",
+            function()
+                require("dapui").toggle()
+            end,
+        },
         { "<leader>db", "<cmd>DapToggleBreakpoint<cr>" },
         { "<leader>dc", "<cmd>DapContinue<cr>" },
     },
