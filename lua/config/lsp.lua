@@ -31,7 +31,19 @@ vim.lsp.enable("luals")
 
 vim.lsp.enable("pyright")
 
-vim.lsp.enable("roslyn")
+-- No need to enable, roslyn.nvim automatically does it for us
+-- vim.lsp.enable("roslyn")
+
+vim.lsp.config("roslyn", {
+    cmd = {
+        -- "dotnet",
+        -- "<target>/Microsoft.CodeAnalysis.LanguageServer.dll",
+        vim.fn.exepath("Microsoft.CodeAnalysis.LanguageServer"),
+        "--logLevel=Information",
+        "--extensionLogDirectory=" .. vim.fs.dirname(vim.lsp.get_log_path()),
+        "--stdio",
+    },
+})
 
 vim.lsp.enable("cmake")
 vim.lsp.enable("clangd")
