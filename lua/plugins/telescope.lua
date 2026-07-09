@@ -8,7 +8,14 @@ return {
     },
     keys = {
         { "<leader>tf", "<cmd>Telescope find_files<cr>" },
-        { "<leader>tt", "<cmd>Telescope live_grep<cr>" },
+        {
+            "<leader>tt",
+            function()
+                require("telescope.builtin").live_grep({
+                    additional_args = { "--multiline" },
+                })
+            end,
+        },
         { "<leader>tc", "<cmd>Telescope resume<cr>" },
         { "<leader>th", "<cmd>Telescope find_files hidden=true<cr>" },
         { "<leader>tb", "<cmd>Telescope buffers<cr>" },
