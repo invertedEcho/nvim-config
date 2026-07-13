@@ -14,7 +14,7 @@ return {
                 rust = { "rustfmt" },
                 java = { "google-java-format" },
             },
-            format_on_save = { timeout_ms = 100, lsp_format = "fallback" },
+            format_on_save = { timeout_ms = 500, lsp_format = "fallback" },
             async = true,
         })
     end,
