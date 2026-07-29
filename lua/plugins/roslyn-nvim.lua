@@ -3,7 +3,7 @@ return {
     ---@module 'roslyn.config'
     ---@type RoslynNvimConfig
     opts = {
-        filewatching = "roslyn",
-        broad_search = true,
+        -- filewatching = "roslyn",
+        -- broad_search = true,
     },
 }

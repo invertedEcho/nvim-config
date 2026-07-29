@@ -34,16 +34,16 @@ vim.lsp.enable("pyright")
 -- No need to enable, roslyn.nvim automatically does it for us
 -- vim.lsp.enable("roslyn")
 
-vim.lsp.config("roslyn", {
-    cmd = {
-        -- "dotnet",
-        -- "<target>/Microsoft.CodeAnalysis.LanguageServer.dll",
-        vim.fn.exepath("Microsoft.CodeAnalysis.LanguageServer"),
-        "--logLevel=Information",
-        "--extensionLogDirectory=" .. vim.fs.dirname(vim.lsp.log.get_filename()),
-        "--stdio",
-    },
-})
+-- vim.lsp.config("roslyn", {
+--     cmd = {
+--         -- "dotnet",
+--         -- "<target>/Microsoft.CodeAnalysis.LanguageServer.dll",
+--         vim.fn.exepath("Microsoft.CodeAnalysis.LanguageServer"),
+--         "--logLevel=Information",
+--         "--extensionLogDirectory=" .. vim.fs.dirname(vim.lsp.log.get_filename()),
+--         "--stdio",
+--     },
+-- })
 
 vim.lsp.enable("cmake")
 vim.lsp.enable("clangd")
@@ -60,3 +60,13 @@ vim.lsp.enable("nixd")
 -- })
 
 vim.lsp.enable("gopls")
+
+vim.lsp.config("gdshader_lsp", {
+    cmd = {
+        "~/Downloads/gdshader_lsp_release_linux",
+        "--stdio",
+    },
+    filetypes = { "gdshader", "gdshaderinc" },
+    root_markers = { "project.godot", ".git" },
+})
+vim.lsp.enable("gdshader_lsp")

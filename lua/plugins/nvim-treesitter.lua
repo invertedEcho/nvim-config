@@ -21,6 +21,8 @@ return {
             "c_sharp",
             "cpp",
             "glsl",
+            "regex", -- also required for noice.nvim
+            "bash", -- also required for noice.nvim
         })
         vim.api.nvim_create_autocmd("FileType", {
             pattern = { "*" },
