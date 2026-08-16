@@ -13,5 +13,6 @@ return {
         },
         { "<leader>db", "<cmd>DapToggleBreakpoint<cr>" },
         { "<leader>dc", "<cmd>DapContinue<cr>" },
+        { "<leader>dt", "<cmd>DapTerminate<cr>" },
     },
 }
