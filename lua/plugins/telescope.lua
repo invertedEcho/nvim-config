@@ -19,5 +19,6 @@ return {
         { "<leader>tc", "<cmd>Telescope resume<cr>" },
         { "<leader>th", "<cmd>Telescope find_files hidden=true<cr>" },
         { "<leader>tb", "<cmd>Telescope buffers<cr>" },
+        { "<leader>tg", "<cmd>Telescope git_status<cr>" },
     },
 }

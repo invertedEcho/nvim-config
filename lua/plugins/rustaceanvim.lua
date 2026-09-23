@@ -4,9 +4,9 @@ return {
     lazy = false, -- This plugin is already lazy
     config = function()
         vim.g.rustaceanvim = {
-            tools = {
-                enable_clippy = false, -- test whether this improves performance
-            },
+            -- tools = {
+            --     enable_clippy = false, -- test whether this improves performance
+            -- },
             -- server = {
             --     default_settings = {
             --         ["rust-analyzer"] = {
